@@ -1,6 +1,8 @@
 package com.fatalitiii.adventureplus;
 
 import com.fatalitiii.adventureplus.Blocks.AdventureBlocks;
+import com.fatalitiii.adventureplus.GUI.GuiHandler;
+import com.fatalitiii.adventureplus.Items.AdventureItems;
 import com.fatalitiii.adventureplus.Utils.*;
 
 import net.minecraft.util.EnumChatFormatting;
@@ -40,6 +42,7 @@ public class AdventurePlus {
 		data.logoFile = "assets/adventureplus/textures/misc/logo.png";
 
 		AdventureBlocks.init();
+		AdventureItems.init();
 		
 		NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
 		channel = NetworkRegistry.INSTANCE.newSimpleChannel(ModInfo.CHANNEL);

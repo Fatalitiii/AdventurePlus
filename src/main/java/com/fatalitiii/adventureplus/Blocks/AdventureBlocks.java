@@ -12,7 +12,6 @@ public class AdventureBlocks {
 
 	public static void init() {
 		BlockRegister.init(blockEvent, BlockEvent.class, "event", AdventurePlus.tab, ModInfo.MOD_ID);
-		BlockRegister.init(blockEvent, BlockEvent.class, "test2", AdventurePlus.tab, ModInfo.MOD_ID);
 	}
 
 }
